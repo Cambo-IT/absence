@@ -88,7 +88,7 @@ function prev(){
       ctx.fillStyle = "#1876f2";
       ctx.fillText(datet.innerHTML, 250, 410);
       ctx.fillStyle = "#000";
-      ctx.fillText("ចូលធ្វើការវិញថ្ងៃទី", 50, 480);
+      ctx.fillText("ចូលរៀនវិញថ្ងៃទី", 50, 480);
       ctx.fillStyle = "#1876f2";
       ctx.fillText(datei.innerHTML, 250, 480);
       ctx.fillStyle = "#000";
