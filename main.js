@@ -72,7 +72,7 @@ function prev(){
       ctx.fillStyle = "#000";
       ctx.fillText("សិក្សាម៉ោង", 380, 150);
       ctx.fillStyle = "#1876f2";
-      ctx.fillText(position.innerHTML, 450, 150);
+      ctx.fillText(position.innerHTML, 505, 150);
       ctx.fillStyle = "#000";
       ctx.fillText("សូមគោរពជូនលោកនាយក​មជ្ឈមណ្ឌលខេមបូអាយធី", 100, 210);
       ctx.fillText("កម្មវត្ថុ", 50, 270);
