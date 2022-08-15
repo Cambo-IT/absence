@@ -59,7 +59,7 @@ function prev(){
       // ctx.fillRect(0, 750, 800, 50);
       ctx.fillStyle = "#1876f2";
       ctx.fillRect(200, 570, 300, 2);
-      ctx.drawImage(logo, 25, 15, 140, 70);
+      ctx.drawImage(logo, 25, 15, 150, 70);
       ctx.fillStyle = "#000";
       ctx.font = '22pt Krasar'; //Arial
       ctx.fillStyle = "#ffffff";
@@ -70,11 +70,11 @@ function prev(){
       ctx.fillStyle = "#1876f2";
       ctx.fillText(name.innerHTML, 190, 150);
       ctx.fillStyle = "#000";
-      ctx.fillText("តួនាទី", 380, 150);
+      ctx.fillText("សិក្សាម៉ោង", 380, 150);
       ctx.fillStyle = "#1876f2";
       ctx.fillText(position.innerHTML, 450, 150);
       ctx.fillStyle = "#000";
-      ctx.fillText("សូមគោរពជូនលោកប្រធានហាងស្រែមាស", 150, 210);
+      ctx.fillText("សូមគោរពជូនលោកនាយក​មជ្ឈមណ្ឌលខេមបូអាយធី", 100, 210);
       ctx.fillText("កម្មវត្ថុ", 50, 270);
       ctx.fillText("សុំច្បាប់ឈប់សម្រាកចំនួន", 200, 270);
       ctx.fillStyle = "#1876f2";
@@ -97,8 +97,8 @@ function prev(){
       ctx.fillText(reason.innerHTML, 250, 550);
       ctx.fillStyle = "#000";
       ctx.fillText("សេចក្តីដូចបានជម្រាបខាងលើ", 200, 620);
-      ctx.fillText("សូមលោកប្រធានមេត្តាអនុញ្ញាតដោយក្តីអនុគ្រោះ", 100, 670);
-      ctx.fillText("សូមលោកប្រធានទទួលការគោរពដ៏ខ្ពង់ខ្ពស់អំពីខ្ញុំបាទ/នាងខ្ញុំ។", 50, 720); 
+      ctx.fillText("សូមលោកនាយកមេត្តាអនុញ្ញាតដោយក្តីអនុគ្រោះ", 100, 670);
+      ctx.fillText("សូមលោកនាយកទទួលការគោរពដ៏ខ្ពង់ខ្ពស់អំពីខ្ញុំបាទ/នាងខ្ញុំ។", 50, 720); 
       
       var conSex = document.getElementById("inSex").value;
       
