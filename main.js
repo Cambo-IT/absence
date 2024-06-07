@@ -75,11 +75,11 @@ function prev() {
       ctx.fillText(name.innerHTML, 280, 150);
       ctx.fillStyle = "#000";
       ctx.textAlign = "start";
-      ctx.fillText("តួនាទី", 380, 150);
+      ctx.fillText("សិក្សាវគ្គ", 380, 150);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(position.innerHTML, 450, 150);
+      ctx.fillText(position.innerHTML, 480, 150);
       ctx.fillStyle = "#000";
-      ctx.fillText("សូមគោរពជូនលោកប្រធានហាងស្រែមាស", 150, 210);
+      ctx.fillText("សូមគោរពជូនលោកនាយកមជ្ឈមណ្ឌលខេមបូអាយធី", 110, 210);
       ctx.fillText("កម្មវត្ថុ", 50, 270);
       ctx.fillText("សុំច្បាប់ឈប់សម្រាកចំនួន", 200, 270);
       ctx.fillStyle = "#0D55B5";
@@ -93,7 +93,7 @@ function prev() {
       ctx.fillStyle = "#0D55B5";
       ctx.fillText(datet.innerHTML, 250, 410);
       ctx.fillStyle = "#000";
-      ctx.fillText("ចូលធ្វើការវិញថ្ងៃទី", 50, 480);
+      ctx.fillText("ចូលរៀនវិញថ្ងៃទី", 50, 480);
       ctx.fillStyle = "#0D55B5";
       ctx.fillText(datei.innerHTML, 250, 480);
       ctx.fillStyle = "#000";
