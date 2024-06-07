@@ -102,8 +102,8 @@ function prev() {
       ctx.fillText(reason.innerHTML, 250, 550);
       ctx.fillStyle = "#000";
       ctx.fillText("សេចក្តីដូចបានជម្រាបខាងលើ", 200, 620);
-      ctx.fillText("សូមលោកប្រធានមេត្តាអនុញ្ញាតដោយក្តីអនុគ្រោះ", 100, 670);
-      ctx.fillText("សូមលោកប្រធានទទួលការគោរពដ៏ខ្ពង់ខ្ពស់អំពីខ្ញុំបាទ/នាងខ្ញុំ។", 50, 720); 
+      ctx.fillText("សូមលោកនាយកមេត្តាអនុញ្ញាតដោយក្តីអនុគ្រោះ", 100, 670);
+      ctx.fillText("សូមលោកនាយកទទួលការគោរពដ៏ខ្ពង់ខ្ពស់អំពីខ្ញុំបាទ/នាងខ្ញុំ។", 50, 720); 
       
       var conSex = document.getElementById("inSex").value;
       
