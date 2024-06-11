@@ -164,7 +164,7 @@ async function onShares() {
 
     const shareData = {
         
-        // text: textShow ,
+         text: textShow ,
             files: filesArray
         }; 
         navigator.share(shareData);
