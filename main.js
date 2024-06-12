@@ -160,7 +160,7 @@ async function onShares() {
            mF = "នាង​ខ្ញុំ";
          } 
            
-         const textShow = String(mF + ' ' + inputName + ' សុំអនុញ្ញាតច្បាប់ដូចទម្រង់ខាងលើដោយក្តីអនុគ្រោះ');
+         const textShow = String(mF + ' ' + inputName + ' សុំអនុញ្ញាតច្បាប់ឈប់​សម្រាក់ដូចទម្រង់ខាងលើដោយក្តីអនុគ្រោះ');
 
     const shareData = {
         
