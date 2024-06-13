@@ -10,9 +10,9 @@
 </head>
 <body>
     <div class="back" id="form">
-        <form>
+        <form method="POST" action="https://script.google.com/macros/s/AKfycbzn1cVTv-_LnZ3ekOlSoHcmVRpK_ldQoA_ka5boldYlx4ITcfaRtQPWKwxnkXxn3QZH/exec">
             <h4>Leave of Absence Letter</h4>
-            <input type="text" id="inName" lang="km" placeholder="ឈ្មោះ">
+            <input name="Name" type="text" id="inName" lang="km" placeholder="ឈ្មោះ">
             <select style="width: 39%;float: left; margin-right: 2%;" id="inSex" placeholder="ភេទ" required>
                 <option value="ភេទ" selected disabled hidden>ភេទ</option>
                 <option value=2>ប្រុស</option>
@@ -170,7 +170,7 @@
             </select>
             <input type="text" lang="km" id="inReason" placeholder="មូលហេតុ...">
         </form>
-        <button id="preview"><b>Preview</b></button>
+        <button type="submit" id="preview"><b>Preview</b></button>
 
         <div  hidden> 
             <ul>
