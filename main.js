@@ -151,20 +151,20 @@ async function onShares() {
             )
         ]; 
 
-         var mFSex = document.getElementById("inSex").value;
-         var inputName = document.getElementById("inName").value;
-         var mF = "";
-         if (mFSex < 3) {      
-           mF = "ខ្ញុំបាទ";
-         } else {       
-           mF = "នាង​ខ្ញុំ";
-         } 
+      //   var mFSex = document.getElementById("inSex").value;
+     //    var inputName = document.getElementById("inName").value;
+      //   var mF = "";
+       //  if (mFSex < 3) {      
+      //     mF = "ខ្ញុំបាទ";
+       //  } else {       
+       //    mF = "នាង​ខ្ញុំ";
+       //  } 
            
-         const textShow = String(mF + ' ' + inputName + ' សុំអនុញ្ញាតច្បាប់ឈប់​សម្រាក់ដូចទម្រង់ខាងលើដោយក្តីអនុគ្រោះ');
+        // const textShow = String(mF + ' ' + inputName + ' សុំអនុញ្ញាតច្បាប់ឈប់​សម្រាក់ដូចទម្រង់ខាងលើដោយក្តីអនុគ្រោះ');
 
     const shareData = {
         
-         text: textShow ,
+         //text: textShow ,
             files: filesArray
         }; 
         navigator.share(shareData);
