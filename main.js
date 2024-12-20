@@ -9,7 +9,7 @@ const logo = document.getElementById("logo");
 function prev() {
    
         if (document.getElementById("inDays").value.length == 0) {
-            alert("សូម​បញ្ចូលចំនួនថ្ងៃ​ឈប់​សម្រាក");
+            alert("សូម​បញ្ចូលចំនួនថ្ងៃ​ឈប់​");
             return false;
         }
         
