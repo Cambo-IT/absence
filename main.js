@@ -8,8 +8,8 @@ const logo = document.getElementById("logo");
 
 function prev() {
    
-        if (document.getElementById("inPosition").value.length == 0) {
-            alert("Insufficient input data!");
+        if (document.getElementById("inDays").value.length == 0) {
+            alert("សូម​បញ្ចូលចំនួនថ្ងៃ​ឈប់​សម្រាក");
             return false;
         }
         
