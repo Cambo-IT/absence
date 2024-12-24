@@ -69,11 +69,11 @@ function prev() {
       ctx.fillRect(0, 0, 800, 900);
       ctx.fillStyle = "#0D55B5";
       ctx.fillRect(0, 0, 800, 100);
-      ctx.fillStyle = "#0D55B5";
-      ctx.fillRect(200, 645, 300, 2);
+      // ctx.fillStyle = "#0D55B5";
+      // ctx.fillRect(200, 555, 300, 2);
       ctx.drawImage(logo, 25, 15, 140, 70);
       ctx.fillStyle = "#000";
-      ctx.font = '22pt Krasar'; 
+      ctx.font = '23pt Krasar'; 
       ctx.fillStyle = "#ffffff";
       ctx.fillText("ពាក្យស្នើសុំអនុញ្ញាតឈប់សម្រាក", 200, 68);
 
@@ -92,56 +92,55 @@ function prev() {
 
       ctx.font = '20pt Krasar'; 
       ctx.fillStyle = "#000";
-      ctx.fillText("វេន​សិក្សា", 50, 210);
+      ctx.fillText("វេន​សិក្សា", 50, 205);
       ctx.fillStyle = "#0D55B5";
       ctx.textAlign = "center";
-      ctx.fillText(shift.innerHTML, 280, 210);
+      ctx.fillText(shift.innerHTML, 280, 205);
 
       ctx.fillStyle = "#000";
       ctx.textAlign = "start";
-      ctx.fillText("ម៉ោង​សិក្សា", 380, 210);
+      ctx.fillText("ម៉ោង​សិក្សា", 380, 205);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(hour.innerHTML, 500, 210);
+      ctx.fillText(hour.innerHTML, 500, 205);
 
 
-
       ctx.fillStyle = "#000";
-      ctx.fillText("សូមគោរពជូនលោកនាយកមជ្ឈមណ្ឌលខេមបូអាយធី", 110, 270);
-      ctx.fillText("កម្មវត្ថុ", 50, 340);
-      ctx.fillText("សុំច្បាប់ឈប់សម្រាកចំនួន", 200, 340);
+      ctx.fillText("សូមគោរពជូនលោកនាយកមជ្ឈមណ្ឌលខេមបូអាយធី", 110, 260);
+      ctx.fillText("កម្មវត្ថុ", 50, 315);
+      ctx.fillText("សុំច្បាប់ឈប់សម្រាកចំនួន", 200, 315);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(days.innerHTML, 470, 340);
+      ctx.fillText(days.innerHTML, 470, 315);
       ctx.fillStyle = "#000";
-      ctx.fillText("ចាប់ពីថ្ងៃទី", 50, 410);
+      ctx.fillText("ចាប់ពីថ្ងៃទី", 50, 370);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(datef.innerHTML, 250, 410);
+      ctx.fillText(datef.innerHTML, 250, 370);
       ctx.fillStyle = "#000";
-      ctx.fillText("ដល់ថ្ងៃទី", 50, 480);
+      ctx.fillText("ដល់ថ្ងៃទី", 50, 425);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(datet.innerHTML, 250, 480);
+      ctx.fillText(datet.innerHTML, 250, 425);
       ctx.fillStyle = "#000";
-      ctx.fillText("ចូលរៀនវិញថ្ងៃទី", 50, 550);
+      ctx.fillText("ចូលរៀនវិញថ្ងៃទី", 50, 480);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(datei.innerHTML, 250, 550);
+      ctx.fillText(datei.innerHTML, 250, 480);
       ctx.fillStyle = "#000";
-      ctx.fillText("មូលហេតុ", 50, 620);
+      ctx.fillText("មូលហេតុ", 50, 535);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(reason.innerHTML, 250, 620);
+      ctx.fillText(reason.innerHTML, 250, 535);
       ctx.fillStyle = "#000";
-      ctx.fillText("សេចក្តីដូចបានជម្រាបខាងលើ", 200, 690);
-      ctx.fillText("សូមលោកនាយកមេត្តាអនុញ្ញាតដោយក្តីអនុគ្រោះ", 100, 740);
-      ctx.fillText("សូមលោកនាយកទទួលការគោរពដ៏ខ្ពង់ខ្ពស់អំពីខ្ញុំបាទ/នាងខ្ញុំ។", 50, 790); 
+      ctx.fillText("សេចក្តីដូចបានជម្រាបខាងលើ", 200, 590);
+      ctx.fillText("សូមលោកនាយកមេត្តាអនុញ្ញាតដោយក្តីអនុគ្រោះ", 100, 645);
+      ctx.fillText("សូមលោកនាយកទទួលការគោរពដ៏ខ្ពង់ខ្ពស់អំពីខ្ញុំបាទ/នាងខ្ញុំ។", 50, 700); 
       
       var conSex = document.getElementById("inSex").value;
       
       var mF = "";
       if (conSex < 3) {      
         ctx.fillRect(122, 142, 60, 2);
-        ctx.fillRect(582, 780, 60, 2);
+        ctx.fillRect(582, 690, 60, 2);
         mF = "ខ្ញុំបាទ";
       } else {       
         ctx.fillRect(50, 142, 60, 2);
-        ctx.fillRect(512, 780, 60, 2);
+        ctx.fillRect(512, 690, 60, 2);
         mF = "នាង​ខ្ញុំ";
       }
 }
