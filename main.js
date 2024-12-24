@@ -8,8 +8,8 @@ const logo = document.getElementById("logo");
 
 function prev() {
    
-        if (document.getElementById("inDays").value.length == 0) {
-            alert("សូម​បញ្ចូលចំនួនថ្ងៃ​ឈប់​");
+        if (document.getElementById("inDays").value.length == 0 || document.getElementById("inHour").value.length == 0) {
+            alert("សូម​បញ្ចូលពត៌មានឱ្យ​បានគ្រប់!​");
             return false;
         }
         
@@ -35,6 +35,9 @@ function prev() {
       let inYearI = document.getElementById("inYearI").value;
       let inReason = document.getElementById("inReason").value;
       let inTime = document.getElementById("inTime").value;
+      let inShift = document.getElementById("inShift").value;
+      let inHour = document.getElementById("inHour").value;
+      let inPmAm = document.getElementById("inPmAm").value;
 
       const name = document.getElementById("name");
       const sex = document.getElementById("sex");
@@ -45,6 +48,9 @@ function prev() {
       const datei = document.getElementById("datei");
       const reason = document.getElementById("reason");
       const time = document.getElementById("time");
+      const shift = document.getElementById("shift");
+      const hour = document.getElementById("hour");
+      const pmam = document.getElementById("pmam");
 
       name.innerHTML = inName;
       sex.innerHTML = inSex;
@@ -55,18 +61,23 @@ function prev() {
       datei.innerHTML = inDateI + "." + inMonthI + "." + inYearI;
       reason.innerHTML = inReason;
       time.innerHTML = inTime;
+      shift.innerHTML = inShift;
+      hour.innerHTML = inHour + " " + inPmAm;
+      pmam.innerHTML = inPmAm;
       
       ctx.fillStyle = "#ffffff";
       ctx.fillRect(0, 0, 800, 900);
       ctx.fillStyle = "#0D55B5";
       ctx.fillRect(0, 0, 800, 100);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillRect(200, 570, 300, 2);
+      ctx.fillRect(200, 645, 300, 2);
       ctx.drawImage(logo, 25, 15, 140, 70);
       ctx.fillStyle = "#000";
       ctx.font = '22pt Krasar'; 
       ctx.fillStyle = "#ffffff";
       ctx.fillText("ពាក្យស្នើសុំអនុញ្ញាតឈប់សម្រាក", 200, 68);
+
+
       ctx.font = '20pt Krasar'; 
       ctx.fillStyle = "#000";
       ctx.fillText("ខ្ញុំបាទ/នាងខ្ញុំ", 50, 150);
@@ -78,43 +89,59 @@ function prev() {
       ctx.fillText("សិក្សាវគ្គ", 380, 150);
       ctx.fillStyle = "#0D55B5";
       ctx.fillText(position.innerHTML, 480, 150);
+
+      ctx.font = '20pt Krasar'; 
       ctx.fillStyle = "#000";
-      ctx.fillText("សូមគោរពជូនលោកនាយកមជ្ឈមណ្ឌលខេមបូអាយធី", 110, 210);
-      ctx.fillText("កម្មវត្ថុ", 50, 270);
-      ctx.fillText("សុំច្បាប់ឈប់សម្រាកចំនួន", 200, 270);
+      ctx.fillText("វេន​សិក្សា", 50, 210);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(days.innerHTML, 470, 270);
+      ctx.textAlign = "center";
+      ctx.fillText(shift.innerHTML, 280, 210);
+
       ctx.fillStyle = "#000";
-      ctx.fillText("ចាប់ពីថ្ងៃទី", 50, 340);
+      ctx.textAlign = "start";
+      ctx.fillText("ម៉ោង​សិក្សា", 380, 210);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(datef.innerHTML, 250, 340);
+      ctx.fillText(hour.innerHTML, 500, 210);
+
+
+
       ctx.fillStyle = "#000";
-      ctx.fillText("ដល់ថ្ងៃទី", 50, 410);
+      ctx.fillText("សូមគោរពជូនលោកនាយកមជ្ឈមណ្ឌលខេមបូអាយធី", 110, 270);
+      ctx.fillText("កម្មវត្ថុ", 50, 340);
+      ctx.fillText("សុំច្បាប់ឈប់សម្រាកចំនួន", 200, 340);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(datet.innerHTML, 250, 410);
+      ctx.fillText(days.innerHTML, 470, 340);
       ctx.fillStyle = "#000";
-      ctx.fillText("ចូលរៀនវិញថ្ងៃទី", 50, 480);
+      ctx.fillText("ចាប់ពីថ្ងៃទី", 50, 410);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(datei.innerHTML, 250, 480);
+      ctx.fillText(datef.innerHTML, 250, 410);
       ctx.fillStyle = "#000";
-      ctx.fillText("មូលហេតុ", 50, 550);
+      ctx.fillText("ដល់ថ្ងៃទី", 50, 480);
       ctx.fillStyle = "#0D55B5";
-      ctx.fillText(reason.innerHTML, 250, 550);
+      ctx.fillText(datet.innerHTML, 250, 480);
       ctx.fillStyle = "#000";
-      ctx.fillText("សេចក្តីដូចបានជម្រាបខាងលើ", 200, 620);
-      ctx.fillText("សូមលោកនាយកមេត្តាអនុញ្ញាតដោយក្តីអនុគ្រោះ", 100, 670);
-      ctx.fillText("សូមលោកនាយកទទួលការគោរពដ៏ខ្ពង់ខ្ពស់អំពីខ្ញុំបាទ/នាងខ្ញុំ។", 50, 720); 
+      ctx.fillText("ចូលរៀនវិញថ្ងៃទី", 50, 550);
+      ctx.fillStyle = "#0D55B5";
+      ctx.fillText(datei.innerHTML, 250, 550);
+      ctx.fillStyle = "#000";
+      ctx.fillText("មូលហេតុ", 50, 620);
+      ctx.fillStyle = "#0D55B5";
+      ctx.fillText(reason.innerHTML, 250, 620);
+      ctx.fillStyle = "#000";
+      ctx.fillText("សេចក្តីដូចបានជម្រាបខាងលើ", 200, 690);
+      ctx.fillText("សូមលោកនាយកមេត្តាអនុញ្ញាតដោយក្តីអនុគ្រោះ", 100, 740);
+      ctx.fillText("សូមលោកនាយកទទួលការគោរពដ៏ខ្ពង់ខ្ពស់អំពីខ្ញុំបាទ/នាងខ្ញុំ។", 50, 790); 
       
       var conSex = document.getElementById("inSex").value;
       
       var mF = "";
       if (conSex < 3) {      
         ctx.fillRect(122, 142, 60, 2);
-        ctx.fillRect(582, 712, 60, 2);
+        ctx.fillRect(582, 780, 60, 2);
         mF = "ខ្ញុំបាទ";
       } else {       
         ctx.fillRect(50, 142, 60, 2);
-        ctx.fillRect(512, 712, 60, 2);
+        ctx.fillRect(512, 780, 60, 2);
         mF = "នាង​ខ្ញុំ";
       }
 }

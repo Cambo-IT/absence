@@ -30,6 +30,32 @@
                 <option value="គ្រប់គ្រងទិន្នន័យ">គ្រប់គ្រងទិន្នន័យ</option>
                 <option value="រចនាវេបសាយ">រចនាវេបសាយ</option>
             </select>
+
+            <select style="width: 39%; float: left; margin-right: 2%;" id="inShift" placeholder="វេន​សិក្សា" required>
+                <option value="ច័ន្ទ-សុក្រ" selected disabled hidden>វេន​សិក្សា</option>
+                <option value="ច័ន្ទ-សុក្រ">ច័ន្ទ-សុក្រ</option>
+                <option value="សៅរ៍-អាទិត្យ">សៅរ៍-អាទិត្យ</option>
+            </select>
+            <select style="width: 37%; float: left; margin-right: 2%;" id="inHour" value="" placeholder="ម៉ោង​សិក្សា" required>
+                <option value="" >ម៉ោង​សិក្សា</option>
+                <option value="០១:០០">០១</option>
+                <option value="០២:០០">០២</option>
+                <option value="០៣:០០">០៣</option>
+                <option value="០៤:០០">០៤</option>
+                <option value="០៥:០០">០៥</option>
+                <option value="០៦:០០">០៦</option>
+                <option value="០៧:០០">០៧</option>
+                <option value="០៨:០០">០៨</option>
+                <option value="០៩:០០">០៩</option>
+                <option value="១០:០០">១០</option>
+                <option value="១១:០០">១១</option>
+                <option value="១២:០០">១២</option>
+            </select>
+            <select style="width: 20%; " id="inPmAm" placeholder="PM/AM" required>
+                <option value="PM">PM</option>
+                <option value="AM">AM</option>
+            </select>
+
             <script>
                 function myFunction(x) {
                     document.getElementById("inDays").defaultValue = "០១";
@@ -42,6 +68,10 @@
                 <option value="ព្រឹក">ព្រឹក</option>
                 <option value="ល្ងាច">ល្ងាច</option>
             </select>
+
+        
+
+            
             <select style="width: 44%; float: left; margin-right: 2%;" id="inDateF" placeholder="ចាប់ពីថ្ងៃទី..." required>
                 <option value="ថ្ងៃទី" selected disabled hidden>ចាប់ពីថ្ងៃទី</option>
                 <option value="០១">០១</option>
@@ -84,6 +114,7 @@
                 <option value="២០២៧">២០២៧</option>
                 <option value="២០២៨">២០២៨</option>
             </select>
+
             <select style="width: 44%; float: left; margin-right: 2%;" id="inDateT" placeholder="ចាប់ពីថ្ងៃទី..." required>
                 <option value="ថ្ងៃទី" selected disabled hidden>ដល់ថ្ងៃទី</option>
                 <option value="០១">០១</option>
@@ -186,6 +217,9 @@
                 <li id="datei"></li>
                 <li id="reason"></li>
                 <li id="time"></li>
+                <li id="shift"></li>
+                <li id="hour"></li>
+                <li id="pmam"></li>
             </ul>
             <img src="./Sremeas-Logo.webp" id="logo">
         </div>
@@ -193,7 +227,7 @@
     
     <div class="container" id="show">
         <div class="preferably-square">
-            <canvas id="result" width="720px" height="760px"></canvas>
+            <canvas id="result" width="720px" height="830px"></canvas>
         </div>
         <button style="margin-right: auto; margin-left: auto;" id="down"><b>Download</b></button>&nbsp;
         <button style="font-size: 18px; margin-right: auto; margin-left: auto;" onClick="onShares()"><b>Share Image</b></button>
